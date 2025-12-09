@@ -44,7 +44,9 @@
     }
 
     .tagline {
-      display: inline-block;
+      display: inline-flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.85rem;
       font-size: clamp(0.9rem, 1.5vw, 1.1rem);
       text-transform: uppercase;
       letter-spacing: 0.12em;
@@ -104,9 +106,27 @@
       .wrapper {
         padding: 2.5rem 1.5rem;
       }
+
+      .logo {
+        font-size: 2.5rem;
+      }
+
+      .tagline {
+        font-size: 0.8rem;
+        letter-spacing: 0.08em;
+        padding: 0.5rem 0.9rem;
+      }
+
+      .stay-tuned {
+        font-size: 0.75rem;
+        letter-spacing: 0.14em;
+        padding: 0.4rem 0.9rem;
+      }
+
+      /* Hide small decorative elements on tiny screens to keep layout clean */
+      .face,
       .bar {
-        width: 40px;
-        left: 6%;
+        display: none;
       }
     }
   </style>
@@ -116,7 +136,13 @@
     <div class="logo">unslop</div>
 
     <div class="tagline">
-      <span>dev tool&nbsp;|&nbsp;ai coding&nbsp;|&nbsp;visualization&nbsp;|&nbsp;visual scripting</span>
+      <span>dev tool</span>
+      <span>|</span>
+      <span>ai coding</span>
+      <span>|</span>
+      <span>visualization</span>
+      <span>|</span>
+      <span>visual scripting</span>
     </div>
 
     <div class="stay-tuned">stay tuned</div>
